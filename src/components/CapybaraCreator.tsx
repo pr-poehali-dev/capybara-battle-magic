@@ -17,13 +17,28 @@ export type Capybara = {
   avatar: string;
 };
 
+
 const elements = [
-  { value: 'fire', label: 'Огонь 🔥' },
-  { value: 'water', label: 'Вода 💧' },
-  { value: 'earth', label: 'Земля 🌍' },
-  { value: 'air', label: 'Воздух 💨' },
-  { value: 'lightning', label: 'Молния ⚡' },
+  // Базовые элементы
+  { value: 'fire', label: 'Огонь 🔥', rarity: 'common' },
+  { value: 'water', label: 'Вода 💧', rarity: 'common' },
+  { value: 'earth', label: 'Земля 🌍', rarity: 'common' },
+  { value: 'air', label: 'Воздух 💨', rarity: 'common' },
+  { value: 'lightning', label: 'Молния ⚡', rarity: 'common' },
+  // Редкие элементы
+  { value: 'darkness', label: 'Тьма 🌑', rarity: 'rare' },
+  { value: 'shadow', label: 'Тень 👥', rarity: 'rare' },
+  { value: 'dj', label: 'Диджей 🎧', rarity: 'rare' },
+  { value: 'light', label: 'Свет ✨', rarity: 'rare' },
+  // Гибридные элементы
+  { value: 'steam', label: 'Пар (Вода + Огонь) 💨🔥', rarity: 'hybrid' },
+  { value: 'lava', label: 'Лава (Огонь + Земля) 🌋', rarity: 'hybrid' },
+  { value: 'ice', label: 'Лёд (Вода + Воздух) ❄️', rarity: 'hybrid' },
+  { value: 'storm', label: 'Шторм (Воздух + Молния) 🌩️', rarity: 'hybrid' },
+  { value: 'metal', label: 'Металл (Земля + Молния) 🔩', rarity: 'hybrid' },
+  { value: 'nature', label: 'Природа (Земля + Вода) 🌿', rarity: 'hybrid' },
 ];
+
 
 const classes = [
   { value: 'warrior', label: 'Воин ⚔️' },

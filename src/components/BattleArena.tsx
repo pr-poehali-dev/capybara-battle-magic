@@ -64,6 +64,7 @@ const generateAttacks = (capybara: Capybara): Attack[] => {
   return [...basicAttacks, elementalAttack, classAttack, weaponAttack];
 };
 
+
 const getElementName = (element: string): string => {
   const names: Record<string, string> = {
     fire: 'Огненный',
@@ -71,9 +72,20 @@ const getElementName = (element: string): string => {
     earth: 'Земляной',
     air: 'Воздушный',
     lightning: 'Молниеносный',
+    darkness: 'Тёмный',
+    shadow: 'Теневой',
+    dj: 'Диджейский',
+    light: 'Светлый',
+    steam: 'Паровой',
+    lava: 'Лавовый',
+    ice: 'Ледяной',
+    storm: 'Штормовой',
+    metal: 'Металлический',
+    nature: 'Природный',
   };
   return names[element] || 'Магический';
 };
+
 
 const getElementEffect = (element: string): string => {
   const effects: Record<string, string> = {
