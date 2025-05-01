@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import Icon from '@/components/ui/icon';
 
+
 export type Capybara = {
   name: string;
   element: string;
@@ -15,7 +16,10 @@ export type Capybara = {
   weapon: string;
   weaponEmoji: string;
   avatar: string;
+  transformation?: string;
+  personality?: string;
 };
+
 
 
 const elements = [

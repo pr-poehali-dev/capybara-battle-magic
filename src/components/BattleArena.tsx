@@ -5,11 +5,13 @@ import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 import { type Capybara } from './CapybaraCreator';
 
+
 type Attack = {
   name: string;
   damage: number;
   element: string;
   effect: string;
+  isUltimate?: boolean;
 };
 
 type BattleState = {
